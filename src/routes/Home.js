@@ -13,7 +13,6 @@ function Home() {
 		let response = await fetch(`${baseUrl}&pageNo=${page}`);
 		let json = await response.json();
 		const totalCount = json.response.body.totalCount;
-		console.log(totalCount);
 		let tempAnimal = [];
 		tempAnimal.push(...json.response.body.items.item);
 		
