@@ -32,4 +32,6 @@ export const fetchOldestDog = async() => {
 			oldestDog.push(...lastDogs.slice(-number).reverse()); // 스프레드 연산자를 사용하여 배열을 병합
 		} //totalCount가 10개 이상이면서 마지막 페이지에 10개 미만의 요소가 있을때
 	}
+
+	return oldestDog;
 }
