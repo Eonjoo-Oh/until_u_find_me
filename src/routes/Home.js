@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { fetchOneYearDogs } from "../api/oneYearApi";
+import { fetchOldestDog } from "../api/oldestApi";
 
 function Home() {
 	const [oneYearDogs, setOneYearDogs] = useState([]);
@@ -13,6 +14,8 @@ function Home() {
 	  }, []);
 
 	console.log(oneYearDogs);
+
+	fetchOldestDog();
 }
 
 export default Home;
