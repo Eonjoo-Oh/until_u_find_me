@@ -3,32 +3,85 @@
 	src: url("/src/assets/font/Goyang.otf");
 }
 
+button{
+	background: inherit;
+	border: none;
+	box-shadow: none;
+	border-radius: 0;
+	padding: 0;
+	overflow: visible;
+	cursor: pointer
+}
+
 .header {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	font-family: goyang;
 	background-color: #fef9f2;
-  }
-  
+	height: 80px;
+}
+
 .logo {
+	width: 30%;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-left: 40px;
+	font-size: 30px;
+}
+
+.sub-title {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+}
+
+.navigation {
+	width: 100%;
 }
 
 .nav-buttons {
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
-	margin-right: 40px;
   }
 
 .nav-button {
+	width: 100%;
 	font-family: goyang;
+	font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        height: 120px;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .nav-buttons {
+        width: 100%;
+        justify-content: space-around;
+        margin-top: 18px;
+		gap: 10px;
+    }
+
+    .nav-button {
+        font-size: 20px;
+        width: 100%;
+    }
 }
