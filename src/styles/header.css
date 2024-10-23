@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "goyang";
+	src: url("/src/assets/font/Goyang.otf");
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-family: goyang;
+  }
+  
+.logo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+  }
+
+.nav-button {
+	font-family: goyang;
+}
