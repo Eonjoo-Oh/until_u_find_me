@@ -29,7 +29,7 @@ function Home() {
 
 	return (
 		<div>
-			<h2 className="one-year-title">오늘이 보호소 입소 1주년이에요</h2>
+			<h2 className="one-year-title">오늘로 일 년째, {oneYearDogs.length}마리 친구들이 가족을 기다려요</h2>
 			<div className="one-year-dogs-card">
 				{oneYearDogs.length > 0 ? ( <AnmialCarousel animals={oneYearDogs} />) : ( <p>Loading...</p>)}
 				{/* {oneYearDogs.length > 0 ? ( <AnimalCard animal={oneYearDogs[0]} />) : ( <p>Loading...</p>)} */}
