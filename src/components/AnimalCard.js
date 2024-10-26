@@ -9,7 +9,7 @@ function AnimalCard({ animal }) {
 	}
 	return (
 		<div className="animal-card">
-			<img src={animal.popfile} alt="1년 전 입소한 강아지"/>
+			<img src={animal.popfile} alt="1년 전 오늘 입소한 강아지"/>
 			<div className='information'>
 				<p className="age-sex">{animal.age}년생 {animal.sexCd === 'M' ? '남아' : '여아'}</p>
 				<p className="care-name">{animal.careNm}</p>

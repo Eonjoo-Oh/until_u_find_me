@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { fetchOneYearDogs } from "../api/oneYearApi";
 import { fetchOldestDog } from "../api/oldestApi";
+import '../styles/home.css';
 import AnimalCard from "../components/AnimalCard";
 import AnmialCarousel from "../components/AnimalCarousel";
 
@@ -29,7 +30,7 @@ function Home() {
 	return (
 		<div>
 			<h2 className="one-year-title">오늘이 보호소 입소 1주년이에요</h2>
-			<div className="animal-cards">
+			<div className="one-year-dogs-card">
 				{oneYearDogs.length > 0 ? ( <AnmialCarousel animals={oneYearDogs} />) : ( <p>Loading...</p>)}
 				{/* {oneYearDogs.length > 0 ? ( <AnimalCard animal={oneYearDogs[0]} />) : ( <p>Loading...</p>)} */}
 			</div>

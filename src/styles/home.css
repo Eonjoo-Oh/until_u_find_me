@@ -1,0 +1,27 @@
+@font-face {
+	font-family: "goyang";
+	src: url("/src/assets/font/Goyang.otf");
+}
+
+* {
+	background-color: #fef9f2;
+}
+.one-year-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-family: goyang;
+	font-size: 30px;
+	padding: 10px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	/* background-color: aqua; */
+}
+
+.one-year-dogs-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
