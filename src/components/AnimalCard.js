@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/animalCard.css';
 
 function AnimalCard({ animal }) {
-	console.log("animal: ", animal)
+	// console.log("animal: ", animal)
 	console.log(animal.popfile);
 	if (!animal || animal === undefined) {
 		return null;

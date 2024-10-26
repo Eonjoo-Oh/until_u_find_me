@@ -24,8 +24,8 @@ function Home() {
 		}
 		fetchData();
 	}, [])
-	console.log("oneYearDogs: ", oneYearDogs);
-	console.log("oneYear length: ,", oneYearDogs.length);
+	// console.log("oneYearDogs: ", oneYearDogs);
+	// console.log("oneYear length: ,", oneYearDogs.length);
 
 	return (
 		<div>

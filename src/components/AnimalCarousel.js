@@ -8,16 +8,18 @@ function AnmialCarousel({ animals }) {
 
 	const prevSlide = () => {
 		setCurrentIndex((prevIdx) => 
-				prevIdx - itemToShow < 0 ? animals.length - itemToShow : prevIdx - itemToShow
+			// prevIdx < 0 ? animals.length - 1 : prevIdx - 1
+			prevIdx - itemToShow < 0 ? animals.length - itemToShow : prevIdx - itemToShow
 		);
 	};
 
 	const nextSlide = () => {
 		setCurrentIndex((nextIdx) => 
-				nextIdx + itemToShow >= animals.length ? 0 : nextIdx + itemToShow
+			// nextIdx 
+			nextIdx + itemToShow >= animals.length ? 0 : nextIdx + itemToShow
 		);
 	};
-
+	console.log("currentIdx: ", currentIndex);
 	return (
 		<div className='carousel'>
 			<button onClick={prevSlide} className='prev-btn'>{"<"}</button>
