@@ -1,3 +1,19 @@
+@font-face {
+	font-family: "goyang";
+	src: url("/src/assets/font/Goyang.otf");
+}
+
+.blank-animal {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-family: goyang;
+	font-size: 20px;
+	margin-top: 20px;
+	/* background-color: aqua; */
+}
+
 .carousel {
 	display: flex;
 	flex-direction: row;
