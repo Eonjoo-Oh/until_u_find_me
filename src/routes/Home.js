@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { fetchOneYearDogs } from "../api/oneYearApi";
 import { fetchOldestDog } from "../api/oldestApi";
-import Header from '../components/Header';
+import AnimalCard from "../components/AnimalCard";
 
 function Home() {
 	const [oneYearDogs, setOneYearDogs] = useState([]);
@@ -22,7 +22,16 @@ function Home() {
 		}
 		fetchData();
 	}, [])
-	// console.log("oneYearDogs: ", oneYearDogs);
+	console.log("oneYearDogs: ", oneYearDogs);
+
+	return (
+		<div>
+			<h2>오늘이 보호소 입소 1주년이에요</h2>
+			<div className="animal-cards">
+				{oneYearDogs.length > 0 ? ( <AnimalCard animal={oneYearDogs[0]} />) : ( <p>Loading...</p>)}
+			</div>
+		</div>
+	);
 	// console.log("oldestDogs: ", oldestDogs);
 }
 
