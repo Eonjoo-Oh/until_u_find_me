@@ -7,14 +7,14 @@ function AnmialCarousel({ animals }) {
 	const itemToShow = 4;
 
 	const prevSlide = () => {
-		setCurrentIndex((prevIndex) => 
-				prevIndex - itemToShow >= animals.length ? 0 : prevIndex - itemToShow
+		setCurrentIndex((prevIdx) => 
+				prevIdx - itemToShow < 0 ? animals.length - itemToShow : prevIdx - itemToShow
 		);
 	};
 
 	const nextSlide = () => {
-		setCurrentIndex((prevIndex) => 
-				prevIndex + itemToShow >= animals.length ? 0 : prevIndex + itemToShow
+		setCurrentIndex((nextIdx) => 
+				nextIdx + itemToShow >= animals.length ? 0 : nextIdx + itemToShow
 		);
 	};
 
