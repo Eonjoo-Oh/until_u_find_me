@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/animalCard.css';
 
 function AnimalCard({ animal }) {
 	console.log("animal: ", animal)
@@ -8,9 +9,11 @@ function AnimalCard({ animal }) {
 	}
 	return (
 		<div className="animal-card">
-			<img src={animal.popfile} alt="1년 전 입소한 강아지" style={{ width: '300px', height: '300px', objectFit: 'cover' }}/>
-			<p>{animal.age}년생 {animal.sexCd === 'M' ? '남아' : '여아'}</p>
-			<p>{animal.careNm}</p>
+			<img src={animal.popfile} alt="1년 전 입소한 강아지"/>
+			<div className='information'>
+				<p className="age-sex">{animal.age}년생 {animal.sexCd === 'M' ? '남아' : '여아'}</p>
+				<p className="care-name">{animal.careNm}</p>
+			</div>
 		</div>
 	)
 }

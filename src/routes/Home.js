@@ -26,7 +26,7 @@ function Home() {
 
 	return (
 		<div>
-			<h2>오늘이 보호소 입소 1주년이에요</h2>
+			<h2 className="one-year-title">오늘이 보호소 입소 1주년이에요</h2>
 			<div className="animal-cards">
 				{oneYearDogs.length > 0 ? ( <AnimalCard animal={oneYearDogs[0]} />) : ( <p>Loading...</p>)}
 			</div>

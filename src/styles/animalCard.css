@@ -1,0 +1,40 @@
+@font-face {
+	font-family: "goyang";
+	src: url("/src/assets/font/Goyang.otf");
+}
+
+.animal-card {
+	width: 300px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+.animal-card img {
+	width: 240px;
+	height: 240px;
+	object-fit: cover;
+	border-radius: 15px;
+	margin-bottom: 10px;
+}
+
+.age-sex {
+	font-family: goyang;
+	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.care-name {
+	font-family: goyang;
+	font-size: 18px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
