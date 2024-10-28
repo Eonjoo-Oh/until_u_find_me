@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 import AnimalCard from './AnimalCard';
+import NoOneYear from './NoOneYear';
 import '../styles/animalCarousel.css';
 
 function AnmialCarousel({ animals }) {
 	const itemToShow = 4;
 	const [currentIndex, setCurrentIndex] = useState(itemToShow);
 
+	animals.length = 0;
 	if (animals.length === 0) {
 		return (
-			<div className='carousel'>
-				<div className='carousel-track--blank'>
-					<p>좋은 날이에요!</p>
-					<p>1년 전 오늘 보호소에 입소한 강아지가 없어요!</p>
-				</div>
-			</div>
+			<NoOneYear />
 		);
 	}
 
