@@ -1,30 +1,22 @@
 import React, { useState } from 'react';
 import AnimalCard from './AnimalCard';
 import NoOneYear from './NoOneYear';
+import FewOneYear from './FewOneYear';
 import '../styles/animalCarousel.css';
 
 function AnmialCarousel({ animals }) {
 	const itemToShow = 4;
 	const [currentIndex, setCurrentIndex] = useState(itemToShow);
 
-	animals.length = 0;
 	if (animals.length === 0) {
 		return (
 			<NoOneYear />
 		);
-	}
-
-	if (animals.length < itemToShow) {
+	} else if (animals.length <= itemToShow) {
 		return (
-			<div className='carousel'>
-				<div className='carousel-track'>
-				{animals.map((animal, index) => (
-					<AnimalCard key={index} animal={animal} />
-				))}
-				</div>
-			</div>
-		)
-	}
+			<FewOneYear animals={animals} />
+		);
+	} //animals의 갯수가 0이거나 itemToShow와 같거나 적을 때 예외 처리
 
 	const infiniteAnimals = [...animals.slice(-itemToShow), ...animals, ...animals.slice(0, itemToShow)];
 	console.log("infiniteAnimals : ", infiniteAnimals)
