@@ -9,7 +9,7 @@ function AnmialCarousel({ animals }) {
 	if (animals.length === 0) {
 		return (
 			<div className='carousel'>
-				<div className='carousel--blank'>
+				<div className='carousel-track--blank'>
 					<p>좋은 날이에요!</p>
 					<p>1년 전 오늘 보호소에 입소한 강아지가 없어요!</p>
 				</div>
@@ -17,7 +17,7 @@ function AnmialCarousel({ animals }) {
 		);
 	}
 
-	if (animals.length < 4) {
+	if (animals.length < itemToShow) {
 		return (
 			<div className='carousel'>
 				<div className='carousel-track'>
