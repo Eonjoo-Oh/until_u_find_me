@@ -18,8 +18,7 @@ function AnmialCarousel({ animals }) {
 		);
 	} //animals의 갯수가 0이거나 itemToShow와 같거나 적을 때 예외 처리
 
-	const infiniteAnimals = [...animals.slice(-itemToShow), ...animals, ...animals.slice(0, itemToShow)];
-	console.log("infiniteAnimals : ", infiniteAnimals)
+	const infiniteAnimals = [...animals.slice(-itemToShow), ...animals, ...animals.slice(0, itemToShow)]; //무한 carousel을 위해 늘린 배열
 
 	const prevSlide = () => {
 		setCurrentIndex((prevIdx) => 
@@ -28,10 +27,10 @@ function AnmialCarousel({ animals }) {
 	}; 
 	const nextSlide = () => {
 		setCurrentIndex((nextIdx) => 
-			infiniteAnimals.length - currentIndex === itemToShow ? itemToShow : currentIndex + 1
+			infiniteAnimals.length - currentIndex === itemToShow ? itemToShow + 1 : currentIndex + 1
 		);
 	};
-	console.log("currentIdx: ", currentIndex);
+
 	return (
 		<div className='carousel'>
 			<button onClick={prevSlide} className='prev-btn'>{"<"}</button>
