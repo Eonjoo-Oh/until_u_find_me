@@ -19,14 +19,15 @@ function AnimalDetail() {
 					<div className='detail__content__info__text'>
 						<div>공고번호 : {animal.noticeNo}</div>
 						<div>나이 : {animal.age.slice(0, 4)}년생</div>
-						<div>공고번호 : {animal.noticeNo}</div>
-						<div>공고번호 : {animal.noticeNo}</div>
-						<div>공고번호 : {animal.noticeNo}</div>
+						<div>성별 : {animal.sexCd === 'M' ? "남아" : "여아"}</div>
+						<div>보호장소 : {animal.careNm} ({animal.careAddr})</div>
+						<div>보호장소 연락처 : {animal.careTel}</div>
+						<div>특징 : {animal.specialMark}</div>
 					</div>
 				</div>
 			</div>
 			<div className='detail__footer'>
-
+				입양문의는 보호소에 전화하셔서 공고번호로 문의하시면 됩니다.
 			</div>
 		</div>
 	);

@@ -21,7 +21,7 @@ button{
 	justify-content: space-between;
 	align-items: center;
 	font-family: goyang;
-	background-color: tomato;
+	background-color: #FFDDAE;
 }
 
 .logo {
@@ -32,7 +32,6 @@ button{
 	justify-content: center;
 	align-items: center;
 	font-size: 30px;
-	background-color: aquamarine;
 }
 
 .sub-title {
@@ -43,7 +42,6 @@ button{
 	justify-content: center;
 	align-items: end;
 	font-size: 18px;
-	background-color: blueviolet;
 }
 
 .navigation {
@@ -53,7 +51,6 @@ button{
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	background-color: chartreuse;
 }
 
 .nav-buttons {
@@ -64,7 +61,6 @@ button{
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
-	background-color: chocolate;
   }
 
 .nav-button {
