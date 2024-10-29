@@ -1,0 +1,18 @@
+@font-face {
+	font-family: "goyang";
+	src: url("/src/assets/font/Goyang.otf");
+}
+
+.detail {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: brown;
+}
+
+/* .detail__content {
+	width: 100%;
+	height: 80%;
+	background-color: aqua;
+} */
