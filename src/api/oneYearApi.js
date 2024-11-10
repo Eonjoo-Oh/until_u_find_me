@@ -4,8 +4,10 @@ export const fetchOneYearDogs = async () => {
 	//일년전 오늘 날짜 구하기
 	const oneYearAgo = new Date();
 	oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
-	const oneYearAgoDate = oneYearAgo.toISOString().split('T')[0].replace(/-/g, '');
+	const oneYearAgoDate = `${oneYearAgo.getFullYear()}${(oneYearAgo.getMonth() + 1).toString().padStart(2, '0')}${oneYearAgo.getDate().toString().padStart(2, '0')}`;
 
+
+	console.log(oneYearAgoDate);
 	const baseUrl = `http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?bgnde=${oneYearAgoDate}&endde=${oneYearAgoDate}&upkind=417000&numOfRows=100&state=protect&kind-417000&serviceKey=${apiKey}&_type=json`;
 	
 	let page = 1;
