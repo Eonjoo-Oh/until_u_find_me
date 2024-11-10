@@ -31,13 +31,13 @@ function Home() {
 		<div className="home">
 			<div>
 				<h2 className="title">오늘로 일 년째, {oneYearDogs.length}마리 친구들이 가족을 기다려요</h2>
-				<div className="one-year-dogs-card">
+				<div className="dogs-card">
 					{oneYearDogs.length > 0 ? ( <AnmialCarousel animals={oneYearDogs} />) : ( <p>Loading...</p>)}
 				</div>
 			</div>
 			<div>
 				<h2 className="title">보호소에서 가장 오래 기다린 친구들이에요</h2>
-				<div className="longest-dogs-card">
+				<div className="dogs-card">
 					{longestDogs.length > 0 ? ( <AnmialCarousel animals={longestDogs} />) : ( <p>Loading...</p>)}
 				</div>
 			</div>
