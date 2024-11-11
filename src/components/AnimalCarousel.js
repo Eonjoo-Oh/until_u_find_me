@@ -36,7 +36,7 @@ function AnmialCarousel({ animals }) {
 			<button onClick={prevSlide} className='prev-btn'>{"<"}</button>
 			<div className='carousel-track'>
 				{infiniteAnimals.slice(currentIndex, currentIndex + itemToShow).map((animal, index) => (
-					<AnimalCard key={index} animal={animal} />
+					<AnimalCard key={index} animal={animal}/>
 				))}
 			</div>
 			<button onClick={nextSlide} className='next-btn'>{">"}</button>
