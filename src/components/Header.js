@@ -1,11 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import '../styles/header.css';
 
 const Header = () => {
+	const navigate = useNavigate();
+	const handleLogoOnclick = () => {
+		navigate('/');
+	}
 	return (
 		<header className='header'>
-			<div className='logo'>
+			<div className='logo' onClick={handleLogoOnclick}>
 				<h1>어서와요 기다렸어요</h1>
 				<h3 className='sub-title'>until you find me</h3>
 			</div>
