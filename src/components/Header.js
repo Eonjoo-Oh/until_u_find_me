@@ -12,12 +12,11 @@ const Header = ({ onScrollToSection }) => {
   // 네비게이션 버튼 클릭 시, 메인 화면으로 이동 후 섹션으로 스크롤
   const handleSection = (section) => {
     if (window.location.pathname !== "/") {
-      // 메인 화면이 아닐 경우 이동 후에 스크롤
-      navigate('/').then(() => onScrollToSection(section));
-    } else {
-      // 메인 화면일 경우 바로 스크롤
-      onScrollToSection(section);
+      // 현재 페이지가 메인 화면이 아닐 경우, 메인 화면으로 이동
+      navigate('/');
     }
+    // 섹션으로 스크롤
+    onScrollToSection(section);
   };
 
   const handleStoryOnClick = () => {
