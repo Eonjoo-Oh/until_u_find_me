@@ -1,0 +1,17 @@
+@font-face {
+	font-family: "goyang";
+	src: url("/src/assets/font/Goyang.otf");
+}
+
+.story {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: goyang;
+}
+
+.story__header {
+	margin-top: 200px;
+	font-size: 40px;
+}
