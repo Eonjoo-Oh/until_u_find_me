@@ -27,7 +27,7 @@ function AnimalDetail() {
 				</div>
 			</div>
 			<div className='detail__footer'>
-				입양문의는 보호소에 전화하셔서 공고번호로 문의하시면 됩니다.
+				해당 동물에 대한 문의는 공고번호로 보호 장소에 문의 바랍니다.
 			</div>
 		</div>
 	);
