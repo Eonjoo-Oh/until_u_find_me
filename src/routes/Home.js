@@ -72,7 +72,10 @@ const Home = forwardRef((props, ref) => {
         </div>
       </div>
       <div>
-        <button onClick={handleStoryClick}>스토리 보러가기</button>
+        <button className='story-btn' onClick={handleStoryClick}>
+          <p>1년 1개월만에 새로운 시작을 한</p>
+          <p>야미 이야기 보러가기</p>
+        </button>
       </div>
     </div>
   );
