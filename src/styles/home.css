@@ -13,6 +13,14 @@
 	align-items: center;
 }
 
+.oneYear {
+	margin-top: 80px;
+}
+
+.longest {
+	margin-bottom: 40px;
+}
+
 .title {
 	display: flex;
 	flex-direction: row;

@@ -51,7 +51,7 @@ const Home = forwardRef((props, ref) => {
 
   return (
     <div className="home">
-      <div ref={oneYearSectionRef}>
+      <div className="oneYear" ref={oneYearSectionRef}>
         <h2 className="title">오늘로 일 년째, {oneYearDogs.length}마리 친구들이 가족을 기다려요</h2>
         <div className="dogs-card">
           {oneYearDogs.length > 0 ? (
@@ -61,7 +61,7 @@ const Home = forwardRef((props, ref) => {
           )}
         </div>
       </div>
-      <div ref={longestSectionRef}>
+      <div className="longest" ref={longestSectionRef}>
         <h2 className="title">보호소에서 가장 오래 기다린 친구들이에요</h2>
         <div className="dogs-card">
           {longestDogs.length > 0 ? (
