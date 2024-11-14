@@ -13,7 +13,7 @@
 - **스토리**
 <img width="1470" alt="story" src="https://github.com/user-attachments/assets/edd9db69-d820-43ec-bbfc-6900a3f0c926">
 
-- **스크롤 이동기능**
+- **스크롤 이동기능** <br/>
 ![scroll2](https://github.com/user-attachments/assets/c5672b92-daba-4c1a-90c6-9e609348511f)
 
 ## 기술 스택
