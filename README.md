@@ -17,8 +17,8 @@
 ![scroll2](https://github.com/user-attachments/assets/c5672b92-daba-4c1a-90c6-9e609348511f)
 
 ## 기술 스택
--**React**: 컴포넌트 기반으로 각 유기견 카드 및 상세 정보를 구성하고 router를 통해 SPA기반 페이지를 구현했습니다.
--**Recoil**:  유기견 데이터 및 상태 관리를 위해 사용했습니다.
+- **React**: 컴포넌트 기반으로 각 유기견 카드 및 상세 정보를 구성하고 router를 통해 SPA기반 페이지를 구현했습니다.
+- **Recoil**:  유기견 데이터 및 상태 관리를 위해 사용했습니다.
 - **CSS**: 일관된 디자인의 UI를 위해 스타일링을 적용했습니다.
 
 ## 주요 기능
@@ -35,15 +35,16 @@
 
 ## 실행 방법
 1. 프로젝트를 클론
-   
-bash
+```bash
    git clone https://github.com/Eonjoo-Oh/until_u_find_me.git
+```
 
 2. 프로젝트 디렉토리 이동 후 의존성 설치:
    
-bash
+```bash
    cd until_u_find_me
    npm install
+```
 
 3. 로컬 서버를 실행합니다
    npm start
