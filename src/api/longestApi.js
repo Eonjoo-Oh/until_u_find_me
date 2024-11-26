@@ -1,7 +1,7 @@
 export const fetchLongestDog = async() => {
 	const apiKey = process.env.REACT_APP_ANIMAL_API_KEY;
 	let oldestDog = [];
-	const baseUrl = `http://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${apiKey}&_type=json&state=protect&upkind=417000&numOfRows=100`;
+	const baseUrl = `https://apis.data.go.kr/1543061/abandonmentPublicSrvc/abandonmentPublic?serviceKey=${apiKey}&_type=json&state=protect&upkind=417000&numOfRows=100`;
 
 	const today = new Date();
 	const todayDate = today.toISOString().split('T')[0].replace(/-/g, '');
